@@ -1,5 +1,17 @@
 .table {
   background: white;
   border-radius: 8px;
+  font-size: 18px;
   padding: 16px;
+}
+
+.td {
+  border-bottom: 1px solid lightgray;
+  padding: 24px 60px 24px 0;
+}
+
+.th {
+  border-bottom: 1px solid lightgray;
+  padding: 8px 0;
+  text-align: left;
 }

@@ -5,7 +5,7 @@ import PageHeader from './PageHeader/PageHeader';
 import TableHeader from './TableHeader/TableHeader';
 import { getData } from '@/store/data/dataActions';
 import Table from './Table/Table';
-import styles from '@/styles/Home.module.css'
+import styles from './Index.module.css'
 
 const Home: React.FC = () => {
   const dispatch = useDispatch();
@@ -22,8 +22,10 @@ const Home: React.FC = () => {
   return (
     <main className={styles.main}>
       <PageHeader />
-      <TableHeader />
-      <Table />
+      <div className={styles.tableContainer}>
+        <TableHeader />
+        <Table />
+      </div>
     </main>
   );
 };

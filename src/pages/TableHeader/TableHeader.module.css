@@ -1,0 +1,13 @@
+.container {
+  padding-bottom: 16px;
+}
+
+.button {
+  background: #E4E3E2;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px;
+}
