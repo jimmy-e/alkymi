@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ReduxState } from '@/store/types';
 import { removeRows } from '@/store/data/dataActions';
+import Dropdown from '@/components/Dropdown';
 import styles from './TableHeader.module.css';
 
 const TableHeader: React.FC = () => {
@@ -17,6 +18,7 @@ const TableHeader: React.FC = () => {
       >
         Remove
       </button>
+      <Dropdown />
     </div>
   );
 };

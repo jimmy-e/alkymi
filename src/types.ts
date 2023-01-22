@@ -19,3 +19,5 @@ export interface Result {
 }
 
 export type FormType = 'date' | 'name' | 'price';
+
+export type SortType = 'date' | 'name' | 'fundName';

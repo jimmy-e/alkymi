@@ -1,7 +1,8 @@
-import { Result } from '@/types';
+import { Result, SortType } from '@/types';
 
 export const GET_DATA = 'GET_DATA';
 export const REMOVE_ROWS = 'REMOVE_ROWS';
+export const SORT_ROWS = 'SORT_ROWS';
 
 interface GetData {
   results: Array<Result>;
@@ -13,4 +14,9 @@ interface RemoveRows {
   type: typeof REMOVE_ROWS;
 }
 
-export type Types = GetData | RemoveRows;
+interface SortRows {
+  sortType: SortType;
+  type: typeof SORT_ROWS;
+}
+
+export type Types = GetData | RemoveRows | SortRows;
