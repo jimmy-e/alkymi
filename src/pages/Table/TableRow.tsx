@@ -12,7 +12,7 @@ interface Props {
 const TableRow: React.FC<Props> = ({ result }) => (
   <tr>
     <td className={styles.td}>
-      <Checkbox />
+      <Checkbox id={result.uuid}/>
     </td>
     <td className={styles.td}>
       <b>{result.name}</b>
