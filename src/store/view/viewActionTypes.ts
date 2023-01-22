@@ -1,5 +1,7 @@
+import { FormType } from '@/types';
+
 export const HANDLE_ID = 'HANDLE_ID';
-export const UPATE_FORM = 'UPDATE_FORM';
+export const UPDATE_FORM = 'UPDATE_FORM';
 
 interface HandleId {
   id: string;
@@ -7,9 +9,9 @@ interface HandleId {
 }
 
 export interface UpdateForm {
-  formType: 'date' | 'name' | 'price';
+  formType: FormType;
   id: string;
-  type: typeof UPATE_FORM;
+  type: typeof UPDATE_FORM;
   valid: boolean;
   value: string;
 }

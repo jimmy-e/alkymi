@@ -1,14 +1,8 @@
-import { Result } from '@/types';
+import { FormType, Result } from '@/types';
 
 interface Input {
   value: string;
   valid: string;
-}
-
-interface RecordInput {
-  date: Input;
-  name: Input;
-  price: Input;
 }
 
 export interface DataInitialState {
@@ -17,7 +11,7 @@ export interface DataInitialState {
 
 export interface ViewInitialState {
   ids: Array<string>;
-  form: Record<string, RecordInput>;
+  form: Record<string, Record<FormType, Input>>;
 }
 
 export interface ReduxState {

@@ -9,11 +9,11 @@ interface Props {
 
 const Checkbox: React.FC<Props> = ({ id }) => {
   const dispatch = useDispatch();
-  const ids = useSelector<ReduxState>((state) => state.view.ids);
+  const ids = useSelector<ReduxState, ReduxState['view']['ids']>((state) => state.view.ids);
 
   return (
     <input
-      checked={[...ids as Array<string>].includes(id)}
+      checked={ids.includes(id)}
       onClick={() => dispatch(handleId(id))}
       type="checkbox"
     />

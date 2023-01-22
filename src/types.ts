@@ -17,3 +17,5 @@ export interface Result {
     };
   };
 }
+
+export type FormType = 'date' | 'name' | 'price';

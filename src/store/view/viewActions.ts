@@ -8,7 +8,7 @@ export const handleId = (id: string) => ({
 export const updateForm = ({ formType, id, value, valid }: Omit<actionTypes.UpdateForm, 'type'>) => ({
   formType,
   id,
-  type: actionTypes.UPATE_FORM,
+  type: actionTypes.UPDATE_FORM,
   valid,
   value,
 });

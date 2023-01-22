@@ -19,13 +19,13 @@ const TableRow: React.FC<Props> = ({ result }) => (
     </td>
     <td className={styles.td}>{moment(result.created).format('MMMM D, YYYY')}</td>
     <td className={styles.td}>
-      <Input value={result.data.fund_name.text} />
+      <Input formType="name" id={result.uuid} />
     </td>
     <td className={styles.td}>
-      <Input value={result.data.due_date.text} />
+      <Input formType="date" id={result.uuid} />
     </td>
     <td className={styles.td}>
-      <Input value={result.data.price.text} />
+      <Input formType="price" id={result.uuid} />
     </td>
   </tr>
 );

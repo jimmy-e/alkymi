@@ -20,14 +20,17 @@ const reducer = (state = initialState, action: actionTypes.Types) => {
         ...state,
         ids: [...state.ids].concat(action.id),
       }
-    case actionTypes.UPATE_FORM:
+    case actionTypes.UPDATE_FORM:
       return {
         ...state,
         form: {
           ...state.form,
           [action.id]: {
             ...state.form[action.id],
-            [action.formType]: action.value,
+            [action.formType]: {
+              valid: action.valid,
+              value: action.value,
+            },
           }
         },
       }
