@@ -5,15 +5,15 @@ export interface Result {
   data: {
     due_date: {
       text: string,
-      validation_error: boolean;
+      validation_error?: string;
     };
     fund_name: {
       text: string,
-      validation_error: boolean;
+      validation_error?: string;
     };
     price: {
       text: string,
-      validation_error: boolean;
+      validation_error?: string;
     };
   };
 }
