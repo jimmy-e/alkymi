@@ -1,10 +1,16 @@
 import { Result } from '@/types';
 
 export const GET_DATA = 'GET_DATA';
+export const REMOVE_ROWS = 'REMOVE_ROWS';
 
 interface GetData {
-  type: typeof GET_DATA;
   results: Array<Result>;
+  type: typeof GET_DATA;
 }
 
-export type Types = GetData;
+interface RemoveRows {
+  ids: Array<string>;
+  type: typeof REMOVE_ROWS;
+}
+
+export type Types = GetData | RemoveRows;

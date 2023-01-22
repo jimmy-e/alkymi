@@ -12,6 +12,11 @@ const reducer = (state = initialState, action: actionTypes.Types) => {
         ...state,
         results: action.results,
       };
+    case actionTypes.REMOVE_ROWS:
+      return {
+        ...state,
+        results: [...state.results].filter((result) => !action.ids.includes(result.uuid)),
+      };
     default: return state;
   }
 };
