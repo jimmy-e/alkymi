@@ -3,6 +3,7 @@ import { ViewInitialState } from '../types';
 
 const initialState: ViewInitialState = {
   ids: [],
+  form: {},
 };
 
 const reducer = (state = initialState, action: actionTypes.Types) => {
@@ -18,6 +19,17 @@ const reducer = (state = initialState, action: actionTypes.Types) => {
       return {
         ...state,
         ids: [...state.ids].concat(action.id),
+      }
+    case actionTypes.UPATE_FORM:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          [action.id]: {
+            ...state.form[action.id],
+            [action.formType]: action.value,
+          }
+        },
       }
     default: return state;
   }
