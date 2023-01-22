@@ -8,5 +8,5 @@ export const getData = (results: Array<Result>) => ({
 
 export const removeRows = (ids: Array<string>) => ({
   ids,
-  type: actionTypes.GET_DATA,
+  type: actionTypes.REMOVE_ROWS,
 });

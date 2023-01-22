@@ -8,6 +8,8 @@ import styles from './Table.module.css'
 const Table: React.FC = () => {
   const results = useSelector<ReduxState>((state) => state.data.results);
 
+  console.log('results: ', results)
+
   return (
     <table className={styles.table}>
       <thead>
