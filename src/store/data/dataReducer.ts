@@ -37,6 +37,7 @@ const reducer = (state = initialState, action: actionTypes.Types) => {
       return {
         ...state,
         results: [...state.results].sort((a, b) => {
+          // @ts-ignore
           return new Date(a.created) - new Date(b.created);
         }),
       };

@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     getSampleData();
-  }, []);
+  }, [getSampleData]);
 
   return (
     <main className={styles.main}>

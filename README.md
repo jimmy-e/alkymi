@@ -6,8 +6,7 @@ This application was bootstrapped with [`create-next-app`](https://github.com/ve
   running `yarn`, you can just run `yarn --ignore-engines`.
 
 To get started, run `yarn` and then `yarn dev`. The application will be available on 
-[http://localhost:3000](http://localhost:3000). In addition, if you want to run a production 
-build, you can run `yarn build` and then `yarn start`.
+[http://localhost:3000](http://localhost:3000).
 
 To run tests, you can run `yarn test`.
 
