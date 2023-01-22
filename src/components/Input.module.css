@@ -4,3 +4,8 @@
   height: 30px;
   padding-left: 8px;
 }
+
+.invalid {
+  border: 1px solid #EE8888 !important;
+  background: #FFE9E9;
+}

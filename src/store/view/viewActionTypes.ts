@@ -11,8 +11,8 @@ interface HandleId {
 export interface UpdateForm {
   formType: FormType;
   id: string;
+  inValid: boolean;
   type: typeof UPDATE_FORM;
-  valid: boolean;
   value: string;
 }
 

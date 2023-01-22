@@ -28,7 +28,7 @@ const reducer = (state = initialState, action: actionTypes.Types) => {
           [action.id]: {
             ...state.form[action.id],
             [action.formType]: {
-              valid: action.valid,
+              inValid: action.inValid,
               value: action.value,
             },
           }

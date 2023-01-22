@@ -20,20 +20,20 @@ const Home: React.FC = () => {
       dispatch(updateForm({
         formType: 'date',
         id: result.uuid,
+        inValid: result.data.due_date.validation_error,
         value: result.data.due_date.text,
-        valid: result.data.due_date.validation_error,
       }));
       dispatch(updateForm({
         formType: 'name',
         id: result.uuid,
+        inValid: result.data.fund_name.validation_error,
         value: result.data.fund_name.text,
-        valid: result.data.fund_name.validation_error,
       }));
       dispatch(updateForm({
         formType: 'price',
         id: result.uuid,
+        inValid: result.data.price.validation_error,
         value: result.data.price.text,
-        valid: result.data.price.validation_error,
       }));
     });
   };

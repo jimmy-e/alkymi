@@ -2,7 +2,7 @@ import { FormType, Result } from '@/types';
 
 interface Input {
   value: string;
-  valid: string;
+  inValid: string;
 }
 
 export interface DataInitialState {
