@@ -1,17 +1,26 @@
+.tableContainer {
+  width: 80vw;
+}
+
 .table {
+  display: block;
+  overflow: auto;
   background: white;
   border-radius: 8px;
   font-size: 18px;
   padding: 16px;
+  width: 100%;
 }
 
 .td {
   border-bottom: 1px solid lightgray;
   padding: 24px 60px 24px 0;
+  width: 5%;
 }
 
 .th {
   border-bottom: 1px solid lightgray;
   padding: 8px 0;
   text-align: left;
+  width: 5%;
 }

@@ -9,8 +9,9 @@ const Table: React.FC = () => {
   const results = useSelector<ReduxState>((state) => state.data.results);
 
   return (
-    <table className={styles.table}>
-      <thead>
+    <div className={styles.tableContainer}>
+      <table className={styles.table}>
+        <thead>
         <tr>
           <th className={styles.th}>{''}</th>
           <th className={styles.th}>Name</th>
@@ -19,13 +20,14 @@ const Table: React.FC = () => {
           <th className={styles.th}>Due Date</th>
           <th className={styles.th}>Price</th>
         </tr>
-      </thead>
-      <tbody>
-      {[...results as Array<Result>].map((result, id) => (
-        <TableRow key={`${result.name}-${id}`} result={result} />
-      ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+        {[...results as Array<Result>].map((result, id) => (
+          <TableRow key={`${result.name}-${id}`} result={result} />
+        ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 
